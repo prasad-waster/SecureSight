@@ -4,20 +4,7 @@ import { useState, useEffect } from "react";
 import IncidentPlayer from "@/components/incident-player";
 import IncidentList from "@/components/incident-list";
 import IncidentTimeline from "@/components/incident-timeline";
-
-interface Incident {
-  id: number;
-  type: string;
-  tsStart: string;
-  tsEnd: string;
-  thumbnailUrl: string;
-  resolved: boolean;
-  camera: {
-    id: number;
-    name: string;
-    location: string;
-  };
-}
+import type { Incident } from "@/types/incident";
 
 interface SelectedIncident {
   id: number;

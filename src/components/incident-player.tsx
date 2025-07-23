@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { Incident } from "@/types/incident";
 
 interface IncidentPlayerProps {
   currentIncident?: {
@@ -9,8 +10,8 @@ interface IncidentPlayerProps {
       location: string;
     };
     thumbnailUrl: string;
-    // Add videoUrl for actual video support
-    videoUrl?: String; // e.g. "/cctv/shop-footage.mp4"
+
+    videoUrl?: String;
   };
 }
 
